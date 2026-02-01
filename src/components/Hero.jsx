@@ -11,13 +11,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="mb-12 w-full max-w-2xl mx-auto">
-        <img
-          src="/hero-subheader.svg"
-          alt="הסבר על הפונט"
-          className="w-full h-auto"
-        />
-      </div>
+      <p className="mb-12 text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto font-davidka text-gray-700 leading-relaxed">
+        הגופן שהופך את המסמך שלכם לארוך יותר בלי שהמרצים ישימו לב
+      </p>
 
       <div className="flex flex-col sm:flex-row gap-4">
         <a href="#download" className="px-8 py-4 bg-[#2c2c2c] text-white rounded-lg text-lg font-medium hover:bg-black transition-all hover:scale-105 shadow-lg">

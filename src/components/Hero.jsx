@@ -7,11 +7,11 @@ const Hero = () => {
         <img
           src="/hero-title.svg"
           alt="דוידקה"
-          className="w-full h-auto"
+          className="w-full h-auto drop-shadow-[0_0_15px_rgba(58,162,219,0.5)]"
         />
       </div>
 
-      <p className="mb-12 text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto font-davidka text-gray-700 leading-relaxed">
+      <p className="mb-12 text-xl md:text-2xl lg:text-3xl max-w-4xl mx-auto font-davidka text-gray-700 leading-relaxed whitespace-nowrap">
         הגופן שהופך את המסמך שלכם לארוך יותר בלי שהמרצים ישימו לב
       </p>
 

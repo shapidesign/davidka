@@ -10,7 +10,7 @@ const Download = () => {
 
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="relative inline-block mb-8">
-                    <h2 className="text-5xl md:text-6xl font-bold font-david absolute top-0 left-0 w-full text-[#3bb2db] opacity-30 blur-[1px]">תפסיק לכתוב. תתחיל לעצב.</h2>
+                    <h2 className="text-5xl md:text-6xl font-bold font-david absolute top-0 left-0 w-full text-[#3aa2db] opacity-30 blur-[1px]">תפסיק לכתוב. תתחיל לעצב.</h2>
                     <h2 className="text-5xl md:text-6xl font-bold font-davidka relative z-10 text-white mix-blend-lighten">תפסיק לכתוב. תתחיל לעצב.</h2>
                 </div>
 

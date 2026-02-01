@@ -25,7 +25,7 @@ function App() {
 
       <footer className="bg-[#2c2c2c] text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <p className="opacity-60 text-sm">© {new Date().getFullYear()} דוידקה - אגודת הסטודנטים העצלנים. לא באמת מגיע ל-12 עמודים.</p>
+          <p className="opacity-60 text-sm">© {new Date().getFullYear()} דוידקה - אגודת הסטודנטים העצלנים. לא באמת מגיע ל-12 עמודים. | <span className="font-bold">Created by Shapi</span></p>
         </div>
       </footer>
     </div>

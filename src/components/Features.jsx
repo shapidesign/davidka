@@ -2,16 +2,12 @@ import React from 'react'
 
 const features = [
     {
-        title: "תווים רחבים ב-15%",
+        title: "תווים רחבים ב-5-10%",
         description: "התווים שלנו מהונדסים מדעית לתפוס בדיוק מספיק מקום נוסף שהמרצה לא ישים לב, אבל מספר העמודים כן."
     },
     {
         title: "אופטימיזציית ריווח",
         description: "הגדלנו את המרווח בין האותיות בשבריר מילימטר. זה מצטבר לעמוד שלם בעבודת סמינריון של 20 עמודים."
-    },
-    {
-        title: "בונוס גובה שורה",
-        description: "גובה שורה גבוה במעט מבטיח שהרווח הכפול שלך ירגיש כמו משולש, בלי להיראות כאילו אתה מרמה."
     },
     {
         title: "ריפוד סימני פיסוק",
@@ -27,9 +23,9 @@ const Features = () => {
                     למה לבחור בדוידקה?
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="p-8 bg-white rounded-2xl border border-gray-100 hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div key={index} className="p-8 bg-white rounded-2xl border border-gray-100 hover:shadow-lg transition-all hover:-translate-y-1 hover:border-[#3aa2db]">
                             <h3 className="text-xl font-bold font-davidka mb-4">{feature.title}</h3>
                             <p className="text-gray-600 font-david leading-relaxed">
                                 {feature.description}

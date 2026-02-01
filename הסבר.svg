@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548.03 23.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3aa2dc;
+        font-family: DavidLibre-Regular, 'David Libre';
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 20px;
+      }
+
+      .cls-2 {
+        fill: #060606;
+        font-family: Davidka-Regular, Davidka;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-1" transform="translate(20.37 16.64)"><tspan x="0" y="0">הגופן שהופך את המסמך שלכם לארוך יותר בלי שהמרצים ישימו לב</tspan></text>
+      <text class="cls-2" transform="translate(0 16.64)"><tspan x="0" y="0">הגופן שהופך את המסמך שלכם לארוך יותר בלי שהמרצים ישימו לב</tspan></text>
+    </g>
+  </g>
+</svg>

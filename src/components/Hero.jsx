@@ -7,22 +7,18 @@ const Hero = () => {
     <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-20 pb-10">
       <div className="relative mb-8 w-full max-w-4xl mx-auto flex justify-center group cursor-pointer" onClick={() => setIsDavidka(!isDavidka)}>
         <div className="grid grid-cols-1 grid-rows-1 items-center justify-items-center w-full min-h-[150px]">
-          {/* Davidka Image */}
+          {/* Davidka Active (Davidka over David) */}
           <img
-            src="/hero-title.svg"
+            src="/Davidka-over-David.svg"
             alt="דוידקה"
-            className={`col-start-1 row-start-1 w-full h-auto max-w-[300px] md:max-w-full transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${isDavidka
-                ? "opacity-100 scale-100 z-20 translate-y-0 filter-none drop-shadow-[0_0_15px_rgba(58,162,219,0.5)]"
-                : "opacity-40 scale-90 z-10 translate-y-4 blur-[1px] grayscale-[50%]"
+            className={`col-start-1 row-start-1 w-full h-auto max-w-[300px] md:max-w-full transition-opacity duration-500 ease-in-out ${isDavidka ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
           />
-          {/* David Image */}
+          {/* David Active (David over Davidka) */}
           <img
-            src="/David.svg"
+            src="/David-over-Davidka.svg"
             alt="דוד"
-            className={`col-start-1 row-start-1 w-full h-auto max-w-[300px] md:max-w-full transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${!isDavidka
-                ? "opacity-100 scale-100 z-20 translate-y-0 filter-none"
-                : "opacity-40 scale-90 z-10 translate-y-4 blur-[1px] grayscale-[50%]"
+            className={`col-start-1 row-start-1 w-full h-auto max-w-[300px] md:max-w-full transition-opacity duration-500 ease-in-out ${!isDavidka ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
           />
         </div>

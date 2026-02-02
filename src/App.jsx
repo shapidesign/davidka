@@ -14,7 +14,7 @@ function App() {
           <div className="text-2xl font-bold font-davidka tracking-tighter">דוידקה</div>
 
           <div className="flex items-center gap-4">
-            <div className="hidden md:block">
+            <div>
               <BMCButton />
             </div>
             <a href="#download" className="bg-[#2c2c2c] text-white px-6 py-2 rounded-full hover:bg-[#4a4a4a] transition-colors text-sm font-medium">

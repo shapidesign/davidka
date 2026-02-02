@@ -11,7 +11,7 @@ const Comparison = () => {
             <h2 className="text-4xl md:text-5xl font-bold font-david absolute top-0 left-0 w-full text-[#3aa2db] opacity-40 blur-[0.5px]">ראה את ההבדל</h2>
             <h2 className="text-4xl md:text-5xl font-bold font-davidka relative z-10 text-[#2c2c2c]">ראה את ההבדל</h2>
           </div>
-          <p className="font-david text-xl text-gray-600 mt-4 max-w-2xl mx-auto">דוד משמאל, דוידקה מימין. נסה בעצמך בתיבה למטה:</p>
+          <p className="font-david text-xl text-gray-600 mt-4 max-w-2xl mx-auto">דוד מימין, דוידקה משמאל. נסה בעצמך בתיבה למטה:</p>
         </div>
 
         <div className="max-w-4xl mx-auto mb-12">

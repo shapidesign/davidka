@@ -6,11 +6,20 @@ const Hero = () => {
   return (
     <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-20 pb-10">
       <div className="relative mb-8 w-full max-w-4xl mx-auto flex justify-center group cursor-pointer" onClick={() => setIsDavidka(!isDavidka)}>
-        <img
-          src={isDavidka ? "/hero-title.svg" : "/David.svg"}
-          alt={isDavidka ? "דוידקה" : "דוד"}
-          className={`w-full h-auto max-w-[300px] md:max-w-full transition-all duration-300 ${isDavidka ? "drop-shadow-[0_0_15px_rgba(58,162,219,0.5)]" : ""}`}
-        />
+        <div className="grid grid-cols-1 grid-rows-1 items-center justify-items-center w-full">
+          {/* Davidka Image (Front) */}
+          <img
+            src="/hero-title.svg"
+            alt="דוידקה"
+            className={`col-start-1 row-start-1 w-full h-auto max-w-[300px] md:max-w-full transition-opacity duration-500 ease-in-out ${isDavidka ? "opacity-100 z-10 drop-shadow-[0_0_15px_rgba(58,162,219,0.5)]" : "opacity-0 z-0"}`}
+          />
+          {/* David Image (Back) */}
+          <img
+            src="/David.svg"
+            alt="דוד"
+            className={`col-start-1 row-start-1 w-full h-auto max-w-[300px] md:max-w-full transition-opacity duration-500 ease-in-out ${isDavidka ? "opacity-0 z-0" : "opacity-100 z-10"}`}
+          />
+        </div>
 
         {/* Toggle Indicator */}
         <div className="absolute top-0 right-0 md:right-10 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full p-2 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -52,8 +52,9 @@ const Comparison = () => {
 
         {/* Infographic - Visible on all screens */}
         <div className="bg-[#f8f9fa] p-8 md:p-12 rounded-2xl border border-gray-200 max-w-4xl mx-auto text-center shadow-sm">
-          <h3 className="text-2xl md:text-3xl font-bold font-davidka mb-8 text-gray-800">ממוצע מילים למסמך של 15 עמודים</h3>
-          <p className="text-gray-500 mb-8 font-david">גודל גופן 12pt • רווח שורה וחצי</p>
+          <h3 className="text-2xl md:text-3xl font-bold font-davidka mb-2 text-gray-800">ממוצע מילים למסמך של 15 עמודים</h3>
+          <p className="text-gray-500 font-david text-lg mb-2">גודל גופן 12pt • רווח שורה וחצי</p>
+          <p className="text-[#3aa2db] font-bold text-2xl mb-8">חיסכון של 8%</p>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
             <div className="flex flex-col items-center">
@@ -73,11 +74,10 @@ const Comparison = () => {
             </div>
 
             <div className="flex flex-col items-center relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#3aa2db] flex items-center justify-center mb-4 bg-white shadow-lg transform scale-110">
-                <span className="text-3xl md:text-4xl font-bold text-[#3aa2db] font-davidka">5,950</span>
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#3aa2db] flex items-center justify-center mb-4 bg-white shadow-lg">
+                <span className="text-2xl md:text-3xl font-bold text-[#3aa2db] font-davidka">5,950</span>
               </div>
               <span className="font-bold text-[#3aa2db] text-xl">Davidka</span>
-              <span className="text-[#3aa2db] font-bold mt-2">חיסכון של 8%</span>
             </div>
           </div>
         </div>

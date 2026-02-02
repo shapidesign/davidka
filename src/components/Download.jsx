@@ -3,10 +3,7 @@ import React from 'react'
 const Download = () => {
     return (
         <section id="download" className="py-24 bg-[#2c2c2c] text-white overflow-hidden relative">
-            {/* Background decoration */}
-            <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none flex justify-center items-center">
-                <h1 className="text-[20vw] font-davidka text-white whitespace-nowrap">Davidka</h1>
-            </div>
+
 
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="relative inline-block mb-8">

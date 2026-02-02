@@ -11,15 +11,16 @@ function App() {
     <div className="min-h-screen bg-[#fdfbf7] text-[#2c2c2c] overflow-x-hidden font-david" dir="rtl">
       <nav className="fixed w-full z-50 bg-[#fdfbf7]/80 backdrop-blur-sm border-b border-[#e5e5e5] py-4">
         <div className="container mx-auto px-6 flex justify-between items-center">
+          <div className="text-2xl font-bold font-davidka tracking-tighter">דוידקה</div>
+
           <div className="flex items-center gap-4">
-            <div className="text-2xl font-bold font-davidka tracking-tighter">דוידקה</div>
             <div className="hidden md:block">
               <BMCButton />
             </div>
+            <a href="#download" className="bg-[#2c2c2c] text-white px-6 py-2 rounded-full hover:bg-[#4a4a4a] transition-colors text-sm font-medium">
+              הורד את דוידקה
+            </a>
           </div>
-          <a href="#download" className="bg-[#2c2c2c] text-white px-6 py-2 rounded-full hover:bg-[#4a4a4a] transition-colors text-sm font-medium">
-            הורד את דוידקה
-          </a>
         </div>
       </nav>
 

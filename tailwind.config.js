@@ -7,8 +7,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                david: ['DavidLibre', 'serif'],
-                davidka: ['Davidka', 'serif'],
+                david: ['DavidLibre', 'Times New Roman', 'serif'],
+                davidka: ['Davidka', 'DavidLibre', 'Times New Roman', 'serif'],
             },
         },
     },

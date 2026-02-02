@@ -15,9 +15,13 @@ const features = [
     }
 ]
 
+import useScrollReveal from '../hooks/useScrollReveal';
+
 const Features = () => {
+    const { ref, isVisible } = useScrollReveal(0.2);
+
     return (
-        <section className="py-24 bg-[#fdfbf7]">
+        <section ref={ref} className={`py-24 bg-[#fdfbf7] border-t border-gray-200 reveal ${isVisible ? 'active' : ''}`}>
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl md:text-5xl font-bold font-davidka text-center mb-16 tracking-tight">
                     למה לבחור בדוידקה?

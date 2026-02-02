@@ -26,7 +26,6 @@ function App() {
       <footer className="bg-[#2c2c2c] text-white py-16">
         <div className="container mx-auto px-6 text-center">
           <div className="mb-12">
-            <img src="/footer.svg" alt="Footer Logo" className="h-16 md:h-20 mx-auto mb-6 opacity-90" />
             <h3 className="text-xl md:text-2xl font-bold font-davidka mb-2 text-[#3aa2db]">עיצוב של המאה ה-21:</h3>
             <p className="text-lg md:text-xl font-david text-gray-300 max-w-2xl mx-auto">
               פתרון שאף אחד לא ביקש לבעיה שאף אחד לא התלונן עליה.

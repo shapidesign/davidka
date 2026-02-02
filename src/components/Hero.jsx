@@ -1,10 +1,13 @@
 import React from 'react'
 
+import useScrollReveal from '../hooks/useScrollReveal';
+
 const Hero = () => {
   const [isDavidka, setIsDavidka] = React.useState(true);
+  const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-20 pb-10">
+    <section ref={ref} className={`min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-20 pb-10 reveal ${isVisible ? 'active' : ''}`}>
       <div className="relative mb-8 w-full max-w-4xl mx-auto flex justify-center group cursor-pointer" onClick={() => setIsDavidka(!isDavidka)}>
         <div className="grid grid-cols-1 grid-rows-1 items-center justify-items-center w-full min-h-[150px]">
           {/* Davidka Active (Davidka over David) */}

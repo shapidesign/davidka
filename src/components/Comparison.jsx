@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 
+import useScrollReveal from '../hooks/useScrollReveal';
+
 const Comparison = () => {
   const [text, setText] = useState("השימוש בגופנים ממשפחת הסריף, ובפרט בגופן 'דוד', נחשב לסטנדרט המקובל בכתיבה אקדמית ומשפטית בישראל מזה עשרות שנים. הגופן משדר רשמיות, סמכותיות וניקיון צורני. כאשר אנו מרחיבים את האותיות בשיעור של כחמישה אחוזים ומוסיפים מרווח מזערי בין התווים, אנו יוצרים שינוי מצטבר המשפיע באופן דרמטי על פריסת הטקסט בדף. התוצאה היא מסמך הנראה זהה למקור בקריאה רגילה, אך מצליח 'למתוח' את מספר העמודים באופן משמעותי מבלי לפגוע בחוויית הקריאה של המרצה או המעסיק.")
+  const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="comparison" className="py-24 bg-white border-y border-gray-100">
+    <section id="comparison" ref={ref} className={`py-24 border-t border-gray-200 reveal ${isVisible ? 'active' : ''}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="relative inline-block">

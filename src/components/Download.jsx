@@ -27,9 +27,7 @@ const Download = () => {
                     </a>
                 </div>
 
-                <p className="mt-8 text-sm text-gray-500 font-mono">
-                    *לא תקף למסמכים משפטיים או מכתבי כופר. השתמשו באחריות.
-                </p>
+
             </div>
         </section>
     )

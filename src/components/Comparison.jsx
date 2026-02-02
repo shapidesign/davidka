@@ -24,10 +24,24 @@ const Comparison = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Mobile View - Estimation Only */}
+        <div className="md:hidden bg-gray-50 p-6 rounded-xl border border-gray-200 text-center">
+          <div className="mb-4">
+            <span className="text-4xl font-bold font-davidka text-[#3aa2db]">~15%</span>
+            <p className="font-david text-lg text-gray-600">תוספת באורך המסמך</p>
+          </div>
+          <p className="font-david text-gray-700">
+            עבור מסמך של 15 עמודים, ברווח בודד וגודל גופן 12pt,
+            <br />
+            <span className="font-bold">דוידקה מוסיף כ-2 עמודים מלאים.</span>
+          </p>
+        </div>
+
+        {/* Desktop View - Side by Side */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* David Libre Column */}
           <div className="bg-[#f0f0f0] p-1 rounded-xl shadow-lg relative">
-            <div className="absolute -top-3 left-4 bg-[#3aa2db] text-white px-3 py-1 rounded-t-lg text-sm font-bold z-0">
+            <div className="absolute -top-3 left-4 bg-[#2c2c2c] text-white px-3 py-1 rounded-t-lg text-sm font-bold z-0">
               David Libre (רגיל)
             </div>
             <div className="bg-white p-8 md:p-12 min-h-[500px] mt-4 relative z-10 paper-texture">
@@ -39,7 +53,7 @@ const Comparison = () => {
 
           {/* Davidka Column */}
           <div className="bg-[#e0e0e0] p-1 rounded-xl shadow-lg relative">
-            <div className="absolute -top-3 right-4 bg-[#2c2c2c] text-white px-3 py-1 rounded-t-lg text-sm font-bold z-0">
+            <div className="absolute -top-3 right-4 bg-[#3aa2db] text-white px-3 py-1 rounded-t-lg text-sm font-bold z-0">
               Davidka (מורחב)
             </div>
             <div className="bg-white p-8 md:p-12 min-h-[500px] mt-4 relative z-10 paper-texture">

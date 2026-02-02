@@ -17,7 +17,14 @@ function App() {
             <div>
               <BMCButton />
             </div>
-            <a href="#download" className="bg-[#2c2c2c] text-white px-6 py-2 rounded-full hover:bg-[#4a4a4a] transition-colors text-sm font-medium font-david">
+            <a
+              href="#download"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('download')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }}
+              className="bg-[#2c2c2c] text-white px-6 py-2 rounded-full hover:bg-[#4a4a4a] transition-colors text-sm font-medium font-david"
+            >
               <span className="md:hidden">להורדה</span>
               <span className="hidden md:inline">הורד את דוידקה</span>
             </a>

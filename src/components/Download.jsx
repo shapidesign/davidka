@@ -53,7 +53,7 @@ const Download = () => {
                             <a
                                 href="/Davidka 2026.zip"
                                 download
-                                className="inline-flex items-center justify-center px-6 py-3 bg-[#2c2c2c] text-white font-medium rounded-lg hover:bg-[#4a4a4a] transition-colors shadow-md"
+                                className="inline-flex items-center justify-center px-6 py-3 bg-[#2c2c2c] text-white font-medium rounded-full hover:bg-[#4a4a4a] transition-colors shadow-md"
                                 onClick={() => setIsModalOpen(false)} // Optional: close on click
                             >
                                 לא תודה, רק להוריד

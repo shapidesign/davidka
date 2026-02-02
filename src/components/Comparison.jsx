@@ -63,7 +63,7 @@ const Comparison = () => {
               <span className="font-bold text-gray-500 text-lg">David</span>
             </div>
 
-            <div className="hidden md:block text-4xl text-gray-300">
+            <div className="hidden md:block text-4xl text-gray-300 rotate-180">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
               </svg>
@@ -73,20 +73,13 @@ const Comparison = () => {
             </div>
 
             <div className="flex flex-col items-center relative">
-              <div className="absolute -top-4 -right-4 bg-[#3aa2db] text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce">
-                -8.2% מילים
-              </div>
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#3aa2db] flex items-center justify-center mb-4 bg-white shadow-lg transform scale-110">
                 <span className="text-3xl md:text-4xl font-bold text-[#3aa2db] font-davidka">5,950</span>
               </div>
               <span className="font-bold text-[#3aa2db] text-xl">Davidka</span>
+              <span className="text-[#3aa2db] font-bold mt-2">חיסכון של 8%</span>
             </div>
           </div>
-
-          <p className="mt-8 text-lg text-gray-600 font-david max-w-2xl mx-auto">
-            <span className="font-bold text-[#3aa2db]">זהו חיסכון של 530 מילים!</span><br />
-            זה כמו לא לכתוב את המבוא, ועדיין לקבל את מלוא הניקוד על האורך.
-          </p>
         </div>
       </div>
     </section>

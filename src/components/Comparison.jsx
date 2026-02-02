@@ -30,8 +30,8 @@ const Comparison = () => {
             <div className="absolute -top-3 left-4 bg-[#2c2c2c] text-white px-3 py-1 rounded-t-lg text-sm font-bold z-0">
               David Libre (רגיל)
             </div>
-            <div className="bg-white p-8 md:p-12 h-full min-h-[500px] mt-4 relative z-10 paper-texture">
-              <p className="font-david text-lg md:text-xl leading-relaxed text-justify whitespace-pre-wrap">
+            <div className="bg-white p-8 md:p-12 h-full min-h-[500px] mt-4 relative z-10 paper-texture overflow-hidden">
+              <p className="font-david text-lg md:text-xl leading-relaxed text-right whitespace-pre-wrap break-words">
                 {text}
               </p>
             </div>
@@ -42,8 +42,8 @@ const Comparison = () => {
             <div className="absolute -top-3 right-4 bg-[#3aa2db] text-white px-3 py-1 rounded-t-lg text-sm font-bold z-0">
               Davidka (מורחב)
             </div>
-            <div className="bg-white p-8 md:p-12 h-full min-h-[500px] mt-4 relative z-10 paper-texture">
-              <p className="font-davidka text-lg md:text-xl leading-relaxed text-justify whitespace-pre-wrap">
+            <div className="bg-white p-8 md:p-12 h-full min-h-[500px] mt-4 relative z-10 paper-texture overflow-hidden">
+              <p className="font-davidka text-lg md:text-xl leading-relaxed text-right whitespace-pre-wrap break-words">
                 {text}
               </p>
             </div>

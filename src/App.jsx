@@ -23,20 +23,27 @@ function App() {
         <Download />
       </main>
 
-      <footer className="bg-[#2c2c2c] text-white py-12">
-        <div className="container mx-auto px-6 text-center space-y-4">
-          <p className="opacity-80 text-sm">
-            עיצוב מקורי: איתמר דוד (Ismar David), עוצב במקור עבור חברת "אינטרטייפ" בשנת 1954.
-          </p>
-          <p className="opacity-80 text-sm">
-            פיתוח ועיצוב הגרסה הדיגיטלית (Libre): מאיר סדן (Meir Sadan), בשיתוף עם גוגל פונטס.
-          </p>
-          <p className="opacity-80 text-sm">
-            רישיון: מופץ תחת רישיון הקוד הפתוח SIL Open Font License 1.1.
-          </p>
-          <p className="opacity-100 text-sm font-bold pt-4 text-[#3aa2db]">
-            פיתוח Davidka: יהונתן שפירא @ ShapiDesign.com (2026).
-          </p>
+      <footer className="bg-[#2c2c2c] text-white py-16">
+        <div className="container mx-auto px-6 text-center">
+          <div className="mb-12">
+            <img src="/footer.svg" alt="Footer Logo" className="h-16 md:h-20 mx-auto mb-6 opacity-90" />
+            <h3 className="text-xl md:text-2xl font-bold font-davidka mb-2 text-[#3aa2db]">עיצוב של המאה ה-21:</h3>
+            <p className="text-lg md:text-xl font-david text-gray-300 max-w-2xl mx-auto">
+              פתרון שאף אחד לא ביקש לבעיה שאף אחד לא התלונן עליה.
+            </p>
+          </div>
+
+          <div className="border-t border-gray-700 pt-12 space-y-4">
+            <p className="opacity-60 text-sm max-w-3xl mx-auto">
+              עיצוב מקורי: איתמר דוד (Ismar David), עוצב במקור עבור חברת "אינטרטייפ" בשנת 1954. | פיתוח ועיצוב הגרסה הדיגיטלית (Libre): מאיר סדן (Meir Sadan), בשיתוף עם גוגל פונטס.
+            </p>
+            <p className="opacity-60 text-sm">
+              רישיון: מופץ תחת רישיון הקוד הפתוח SIL Open Font License 1.1.
+            </p>
+            <p className="opacity-100 text-sm font-bold pt-4 text-[#3aa2db]">
+              פיתוח Davidka: יהונתן שפירא @ ShapiDesign.com (2026).
+            </p>
+          </div>
         </div>
       </footer>
     </div>

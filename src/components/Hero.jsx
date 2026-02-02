@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-20 pb-10">
       <div className="relative mb-8 w-full max-w-4xl mx-auto flex justify-center group cursor-pointer" onClick={() => setIsDavidka(!isDavidka)}>
         <img
-          src={isDavidka ? "/hero-title.svg" : "/David.svg"}
+          src={isDavidka ? "/hero-title.png" : "/David.png"}
           alt={isDavidka ? "דוידקה" : "דוד"}
           className={`w-full h-auto max-w-[300px] md:max-w-full transition-all duration-300 ${isDavidka ? "drop-shadow-[0_0_15px_rgba(58,162,219,0.5)]" : ""}`}
         />

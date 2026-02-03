@@ -21,6 +21,12 @@ function App() {
               href="#download"
               onClick={(e) => {
                 e.preventDefault();
+                if (typeof window.gtag === 'function') {
+                  window.gtag('event', 'click_download_nav', {
+                    event_category: 'navigation',
+                    event_label: 'scroll_to_download'
+                  });
+                }
                 document.getElementById('download')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
               }}
               className="bg-[#2c2c2c] text-white px-6 py-2 rounded-full hover:bg-[#4a4a4a] transition-colors text-sm font-medium font-david"

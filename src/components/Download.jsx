@@ -11,7 +11,15 @@ const Download = () => {
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="flex justify-center">
                     <button
-                        onClick={() => setIsModalOpen(true)}
+                        onClick={() => {
+                            if (typeof window.gtag === 'function') {
+                                window.gtag('event', 'click_download_start', {
+                                    event_category: 'engagement',
+                                    event_label: 'open_download_modal_main'
+                                });
+                            }
+                            setIsModalOpen(true);
+                        }}
                         className="group relative inline-flex items-center justify-center px-10 py-6 text-xl font-bold text-white transition-all duration-300 bg-[#2c2c2c] font-davidka rounded-xl hover:bg-[#3aa2db] hover:scale-105 shadow-xl hover:shadow-2xl"
                     >
                         <span className="mr-2">הורד את כל המשקלים (ZIP)</span>
@@ -54,7 +62,16 @@ const Download = () => {
                                 href="/Davidka 2026.zip"
                                 download
                                 className="inline-flex items-center justify-center px-6 py-3 bg-[#2c2c2c] text-white font-medium rounded-full hover:bg-[#4a4a4a] transition-colors shadow-md"
-                                onClick={() => setIsModalOpen(false)} // Optional: close on click
+                                onClick={() => {
+                                    if (typeof window.gtag === 'function') {
+                                        window.gtag('event', 'file_download', {
+                                            event_category: 'download',
+                                            event_label: 'davidka_zip_modal',
+                                            file_name: 'Davidka 2026.zip'
+                                        });
+                                    }
+                                    setIsModalOpen(false);
+                                }}
                             >
                                 לא תודה, רק להוריד
                             </a>

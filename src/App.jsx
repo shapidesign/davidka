@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Comparison from './components/Comparison'
 import Features from './components/Features'
 import Download from './components/Download'
+import { Analytics } from '@vercel/analytics/react'
 
 import BMCButton from './components/BMCButton';
 
@@ -67,6 +68,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   )
 }
